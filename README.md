@@ -1,6 +1,6 @@
-# CQ Dashboard — Post Sale - Inbound · September 2026
+# CQ Dashboard — Post Sale - Inbound · October 2026
 
-Interactive quality-audit dashboard for CaratLane's Post Sale - Inbound, covering **357 audits** across 15 agents for September 2026 (audit cycle 26 Aug – 25 Sep 2026).
+Interactive quality-audit dashboard for CaratLane's Post Sale - Inbound, covering **192 audits** across 16 agents for October 2026 (audit cycle 26 Sep – 25 Oct 2026).
 
 ## Files
 - `index.html` — main dashboard page
