@@ -1130,7 +1130,7 @@ const AGENTS = {
   "name": "Shoaib_S",
   "initials": "SS",
   "color": "#4f46e5",
-  "cq": 86,
+  "cq": 85,
   "audits": 12,
   "ncf": 0,
   "totalErrors": 14,
@@ -1277,7 +1277,7 @@ const AGENTS = {
   "name": "Raghuvansh_R",
   "initials": "RR",
   "color": "#c2410c",
-  "cq": 85,
+  "cq": 84,
   "audits": 12,
   "ncf": 0,
   "totalErrors": 10,
@@ -1559,11 +1559,157 @@ const AGENTS = {
    "tag": []
   }
  },
+ "chanchals": {
+  "name": "Chanchal_S",
+  "initials": "CS",
+  "color": "#be123c",
+  "cq": 79,
+  "audits": 12,
+  "ncf": 1,
+  "totalErrors": 13,
+  "params": {
+   "ss": 8,
+   "etq": 1,
+   "prob": 1,
+   "sol": 1,
+   "fu": 0,
+   "tag": 2
+  },
+  "aois": [
+   {
+    "cat": "ss",
+    "label": "Soft Skills · NCF",
+    "text": "1 NCF this month (Order Tracking / Status). This month's Inbound NCFs were incorrect process information on Shaya repairs and store-order moneyback, and argumentative handling of an irate customer. Confirm the SOP before committing, and let the customer vent and acknowledge before you explain."
+   },
+   {
+    "cat": "ss",
+    "label": "Soft Skills",
+    "text": "Missed empathy flagged in 3 of 12 audits, for example on the Order Tracking / Status case (Call). Acknowledge the customer's situation and apologise for any delay or inconvenience before moving to the process. A sincere, specific apology in the first response changes the tone of the whole interaction."
+   },
+   {
+    "cat": "ss",
+    "label": "Soft Skills",
+    "text": "Long dead air flagged in 3 of 12 audits, for example on the Repair Request case (Call). Avoid long silences. If you are checking something, tell the customer what you are doing and keep them engaged so they never have to ask whether you are still there."
+   }
+  ],
+  "cases": [
+   {
+    "query": "Order Tracking / Status",
+    "score": 75,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Order delivery status , Address check done . Cx has shared the address and JC updated . Intereption needs to be avoided . BOD . Need more positive phrases on call since the delivery of the Order is gettong delayed . Cx was having an query on the Order delivered which is yet to be marked delivered and JC informed the same will be updated ."
+   },
+   {
+    "query": "Order Tracking / Status",
+    "score": 100,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Call was transfered to post sale team and call was blank and JC tried reaching he Cx but no response and SMS shared ."
+   },
+   {
+    "query": "Order Tracking / Status",
+    "score": 0,
+    "ncf": true,
+    "date": "Call",
+    "comment": "Cx has placed an Order for GC and the same is not delivered and CX wants call back from the Manager and Cx is irate , JC was interepting the Cx on call . JC sounded rude on call . Sounded like JC was kept on aruging with the Cx and JC infomreed the Cx that she has done what ever she can she has done and will arrange the call back ."
+   },
+   {
+    "query": "Order Tracking / Status",
+    "score": 90,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Cx has cancelled an Order and amount is added to profile and cx was looking for placing an New Order . Cx needs assistance for the placing the Order . JC guided the Cx fpr making the payment and placing an Order . Cx was not able to place the Order since the profile balance is not visible in the profile and Tech issue . JC informed that she will check and get bakc by 5 Pm on the same day. Need more apology on call."
+   },
+   {
+    "query": "General Policy Query",
+    "score": 56,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Cx has purchased an product of 9 KT and the sane ha sbeen became brown colour with in few months . Probing needs to be done from JCs end . Placing the call on hold without the Cx is not as per process. JC asked to share the piccs ofthe same to be shared ti her via WA so that she can check and update the details . No empathy and apology on call . Tagging Missed ."
+   },
+   {
+    "query": "Repair Request",
+    "score": 88,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Cx wants to know the repair status of the Order and JC checked and informed the details . Dead air needs to be worked on ."
+   },
+   {
+    "query": "Return Initiation / Request",
+    "score": 88,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Cx said that the SHAYA Product purchased is not worth as seen per the image and wish to have the same returned in 15 days MB . Cx needs refund only and not willing to go with exchange . Hold needs to be worked on ."
+   },
+   {
+    "query": "Return Initiation / Request",
+    "score": 88,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Cx wish to have the product returned under 15 days MB . Dead air needs to be avoided. Make the Cx repeat the query which needs to be avoided BOD. Cx has purchased the product twice , Retention tried but Cx needs MB only."
+   },
+   {
+    "query": "Return Initiation / Request",
+    "score": 100,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Cx has placed an Order # Q3355ECD and raised for return for 15 days MB but the same can been taken in 15 days exchange Only since TC amoujt has been utilized in the Order and the previous JC missed to check and JC informed the details and process to the Cx and over all TAT for the process too . Cx was convienced ."
+   },
+   {
+    "query": "General Policy Query",
+    "score": 88,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Cx has enrolled for POP and no Cx wish to have the same to be cancelled and processed with the refund . JC checked for the details and JC informed like the amount cant been refunded as per CL Policies but he JC needs to add also like the plan is basically for purchase and only Jewel purchase can been done . Need more probing on call ."
+   },
+   {
+    "query": "Refund Status / Delay",
+    "score": 75,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Cx has given the product for LTB in Store on 30th Sep and sue to Medical Emergency Cx needs the refund to be done asap and due to the Bank Account updated the Cx was not getting the refund done and later on Cx has updated the New Bank account and received Rs.1 for confirmation and Cx needs the amount to be refunded since he needs the same for medical emergency . JC informed the refund will be done asap and the product is returned on 30th Sep and TAT will be 4-7 working days needs to be informed . A lttile empathy on call needs to be there . WA connectivity informed ."
+   },
+   {
+    "query": "Refund Status / Delay",
+    "score": 100,
+    "ncf": false,
+    "date": "Call",
+    "comment": "Retention \nThe products were not as per cx expections she wanted refund did not want profile balance"
+   }
+  ],
+  "paramCaseMap": {
+   "ss": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10
+   ],
+   "etq": [
+    4
+   ],
+   "prob": [
+    9
+   ],
+   "sol": [
+    2
+   ],
+   "fu": [],
+   "tag": [
+    0,
+    4
+   ]
+  }
+ },
  "karthikn": {
   "name": "Karthik_N",
   "initials": "KN",
   "color": "#1d4ed8",
-  "cq": 80,
+  "cq": 79,
   "audits": 12,
   "ncf": 0,
   "totalErrors": 14,
@@ -1702,152 +1848,6 @@ const AGENTS = {
    ],
    "fu": [],
    "tag": []
-  }
- },
- "chanchals": {
-  "name": "Chanchal_S",
-  "initials": "CS",
-  "color": "#be123c",
-  "cq": 79,
-  "audits": 12,
-  "ncf": 1,
-  "totalErrors": 13,
-  "params": {
-   "ss": 8,
-   "etq": 1,
-   "prob": 1,
-   "sol": 1,
-   "fu": 0,
-   "tag": 2
-  },
-  "aois": [
-   {
-    "cat": "ss",
-    "label": "Soft Skills · NCF",
-    "text": "1 NCF this month (Order Tracking / Status). This month's Inbound NCFs were either rude or argumentative handling of an upset customer, or incorrect process information on Shaya repairs and store-order moneyback. Let the customer vent and acknowledge before you explain, and confirm the SOP before committing."
-   },
-   {
-    "cat": "ss",
-    "label": "Soft Skills",
-    "text": "Missed empathy flagged in 3 of 12 audits, for example on the Order Tracking / Status case (Call). Acknowledge the customer's situation and apologise for any delay or inconvenience before moving to the process. A sincere, specific apology in the first response changes the tone of the whole interaction."
-   },
-   {
-    "cat": "ss",
-    "label": "Soft Skills",
-    "text": "Long dead air flagged in 3 of 12 audits, for example on the Repair Request case (Call). Avoid long silences. If you are checking something, tell the customer what you are doing and keep them engaged so they never have to ask whether you are still there."
-   }
-  ],
-  "cases": [
-   {
-    "query": "Order Tracking / Status",
-    "score": 75,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Order delivery status , Address check done . Cx has shared the address and JC updated . Intereption needs to be avoided . BOD . Need more positive phrases on call since the delivery of the Order is gettong delayed . Cx was having an query on the Order delivered which is yet to be marked delivered and JC informed the same will be updated ."
-   },
-   {
-    "query": "Order Tracking / Status",
-    "score": 100,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Call was transfered to post sale team and call was blank and JC tried reaching he Cx but no response and SMS shared ."
-   },
-   {
-    "query": "Order Tracking / Status",
-    "score": 0,
-    "ncf": true,
-    "date": "Call",
-    "comment": "Cx has placed an Order for GC and the same is not delivered and CX wants call back from the Manager and Cx is irate , JC was interepting the Cx on call . JC sounded rude on call . Sounded like JC was kept on aruging with the Cx and JC infomreed the Cx that she has done what ever she can she has done and will arrange the call back ."
-   },
-   {
-    "query": "Order Tracking / Status",
-    "score": 90,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Cx has cancelled an Order and amount is added to profile and cx was looking for placing an New Order . Cx needs assistance for the placing the Order . JC guided the Cx fpr making the payment and placing an Order . Cx was not able to place the Order since the profile balance is not visible in the profile and Tech issue . JC informed that she will check and get bakc by 5 Pm on the same day. Need more apology on call."
-   },
-   {
-    "query": "General Policy Query",
-    "score": 56,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Cx has purchased an product of 9 KT and the sane ha sbeen became brown colour with in few months . Probing needs to be done from JCs end . Placing the call on hold without the Cx is not as per process. JC asked to share the piccs ofthe same to be shared ti her via WA so that she can check and update the details . No empathy and apology on call . Tagging Missed ."
-   },
-   {
-    "query": "Repair Request",
-    "score": 88,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Cx wants to know the repair status of the Order and JC checked and informed the details . Dead air needs to be worked on ."
-   },
-   {
-    "query": "Return Initiation / Request",
-    "score": 88,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Cx said that the SHAYA Product purchased is not worth as seen per the image and wish to have the same returned in 15 days MB . Cx needs refund only and not willing to go with exchange . Hold needs to be worked on ."
-   },
-   {
-    "query": "Return Initiation / Request",
-    "score": 88,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Cx wish to have the product returned under 15 days MB . Dead air needs to be avoided. Make the Cx repeat the query which needs to be avoided BOD. Cx has purchased the product twice , Retention tried but Cx needs MB only."
-   },
-   {
-    "query": "Return Initiation / Request",
-    "score": 100,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Cx has placed an Order # Q3355ECD and raised for return for 15 days MB but the same can been taken in 15 days exchange Only since TC amoujt has been utilized in the Order and the previous JC missed to check and JC informed the details and process to the Cx and over all TAT for the process too . Cx was convienced ."
-   },
-   {
-    "query": "General Policy Query",
-    "score": 88,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Cx has enrolled for POP and no Cx wish to have the same to be cancelled and processed with the refund . JC checked for the details and JC informed like the amount cant been refunded as per CL Policies but he JC needs to add also like the plan is basically for purchase and only Jewel purchase can been done . Need more probing on call ."
-   },
-   {
-    "query": "Refund Status / Delay",
-    "score": 75,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Cx has given the product for LTB in Store on 30th Sep and sue to Medical Emergency Cx needs the refund to be done asap and due to the Bank Account updated the Cx was not getting the refund done and later on Cx has updated the New Bank account and received Rs.1 for confirmation and Cx needs the amount to be refunded since he needs the same for medical emergency . JC informed the refund will be done asap and the product is returned on 30th Sep and TAT will be 4-7 working days needs to be informed . A lttile empathy on call needs to be there . WA connectivity informed ."
-   },
-   {
-    "query": "Refund Status / Delay",
-    "score": 100,
-    "ncf": false,
-    "date": "Call",
-    "comment": "Retention \nThe products were not as per cx expections she wanted refund did not want profile balance"
-   }
-  ],
-  "paramCaseMap": {
-   "ss": [
-    0,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    10
-   ],
-   "etq": [
-    4
-   ],
-   "prob": [
-    9
-   ],
-   "sol": [
-    2
-   ],
-   "fu": [],
-   "tag": [
-    0,
-    4
-   ]
   }
  },
  "shazunnisas": {
@@ -2004,9 +2004,9 @@ const AGENTS = {
   "name": "Muzakir_N",
   "initials": "MN",
   "color": "#16a34a",
-  "cq": 67,
+  "cq": 71,
   "audits": 12,
-  "ncf": 1,
+  "ncf": 0,
   "totalErrors": 17,
   "params": {
    "ss": 9,
@@ -2018,9 +2018,9 @@ const AGENTS = {
   },
   "aois": [
    {
-    "cat": "ss",
-    "label": "Soft Skills · NCF",
-    "text": "1 NCF this month (General Policy Query). This month's Inbound NCFs were either rude or argumentative handling of an upset customer, or incorrect process information on Shaya repairs and store-order moneyback. Let the customer vent and acknowledge before you explain, and confirm the SOP before committing."
+    "cat": "sol",
+    "label": "Solution & Rec. · Significant Markdown",
+    "text": "NCF removed on review on the General Policy Query case (Call), with significant markdowns applied instead for failing to take ownership and missing positive/ownership statements. When a customer reports a lost or damaged product, own the next step: explain clearly what is covered, ask for the proof needed, and use phrases like \"Let me make sure this is taken care of for you\" instead of sounding dismissive."
    },
    {
     "cat": "ss",
@@ -2078,10 +2078,10 @@ const AGENTS = {
    },
    {
     "query": "General Policy Query",
-    "score": 0,
-    "ncf": true,
+    "score": 50,
+    "ncf": false,
     "date": "Call",
-    "comment": "Cx lost his product & wanted to understand about the brand insurance, Could have told cx our products r insure if any damage during order deliveryor transit. Did not take any snip or request for any proof from cx. sounded rude on the call."
+    "comment": "Cx lost his product & wanted to understand about the brand insurance, Could have told cx our products r insure if any damage during order deliveryor transit. Did not take any snip or request for any proof from cx. sounded rude on the call. [Revised: NCF removed on review. Significant markdowns applied under Soft Skills (positive/ownership statements) and Solution & Recommendation (failed to take ownership).]"
    },
    {
     "query": "Shaya Order Status / Tracking",
@@ -2170,7 +2170,7 @@ const AGENTS = {
    {
     "cat": "sol",
     "label": "Solution & Rec. · NCF",
-    "text": "2 NCFs this month (Order Tracking / Status, Return Initiation / Request). This month's Inbound NCFs were either rude or argumentative handling of an upset customer, or incorrect process information on Shaya repairs and store-order moneyback. Let the customer vent and acknowledge before you explain, and confirm the SOP before committing."
+    "text": "2 NCFs this month (Order Tracking / Status, Return Initiation / Request). This month's Inbound NCFs were incorrect process information on Shaya repairs and store-order moneyback, and argumentative handling of an irate customer. Confirm the SOP before committing, and let the customer vent and acknowledge before you explain."
    },
    {
     "cat": "ss",
